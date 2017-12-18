@@ -4,7 +4,7 @@ from api_functional.Request import getapi
 
 class PetGetTags:
     def __init__(self, pet_id):
-        self.r = getapi("http://petstore.swagger.io/v2/pet/" + pet_id)
+        self.r = getapi("http://petstore.swagger.io/v2/pet/" + str(pet_id))
         self.o = objectify.fromstring(self.r.content)
 
     def get_id_tag(self):
