@@ -1,7 +1,7 @@
 from lxml import objectify
 from api_functional.Request import getapi
 
-
+# get pet by id
 class PetGetTags:
     def __init__(self, pet_id):
         self.r = getapi("http://petstore.swagger.io/v2/pet/" + str(pet_id))
