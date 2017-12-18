@@ -1,9 +1,11 @@
 from lxml import objectify
+from api_functional.Request import getapi
 
 
 class PetGetTags:
-    def __init__(self, request):
-        self.o = objectify.fromstring(request.content)
+    def __init__(self, pet_id):
+        self.r = getapi("http://petstore.swagger.io/v2/pet/" + pet_id)
+        self.o = objectify.fromstring(self.r.content)
 
     def get_id_tag(self):
         return self.o.id.text
