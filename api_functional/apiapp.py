@@ -5,15 +5,15 @@ from api_functional.PetGetTags import PetGetTags
 from api_functional.Request import getapi
 
 
-# url = "http://petstore.swagger.io/v2/pet/findByStatus?status=available"
-# headers = {'accept': 'application/xml'}
-# r = requests.get(url, headers=headers)
-#
-# print(r.content)
-# tree = etree.XML(r.content)
-# Pets = tree.xpath('.//Pet/name') # дістаємо ліст всіх петів
-# for pet in Pets: # перебираємо петнейми
-#     print('text =', [pet.text]) # виводимо петів
+url = "http://petstore.swagger.io/v2/pet/findByStatus?status=available"
+headers = {'accept': 'application/xml'}
+r = requests.get(url, headers=headers)
+
+print(r.content)
+tree = etree.XML(r.content)
+Pets = tree.xpath('.//Pet/name') # дістаємо ліст всіх петів
+for pet in Pets: # перебираємо петнейми
+    print('text =', [pet.text]) # виводимо петів
 #
 # url = "http://petstore.swagger.io/v2/pet/5678"
 # headers = {'accept': 'application/xml'}
@@ -22,5 +22,5 @@ from api_functional.Request import getapi
 # o = objectify.fromstring(p.content)
 # print(o.name.text)
 
-Pet = PetGetTags('sasdasd')
-getapi("http://petstore.swagger.io/v2/pet/slowo")
+# Pet = PetGetTags('sasdasd')
+# getapi("http://petstore.swagger.io/v2/pet/slowo")
