@@ -1,4 +1,4 @@
-from api_functional.requests.request import *
+from api_functional.rest_request.request import *
 
 
 class Connector:
@@ -9,7 +9,7 @@ class Connector:
     # __PET = "pet/"
 
     @staticmethod
-    def get(url, headers={'accept': 'application/xml'}):
+    def get(url, headers):
         answer = get(url, headers)
 
         if answer.status_code == 200:

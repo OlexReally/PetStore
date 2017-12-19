@@ -1,5 +1,5 @@
 from lxml import objectify
-from api_functional.requests.connector import *
+from api_functional.rest_request.connector import *
 from data.pet import *
 
 # get pet by id

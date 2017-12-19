@@ -1,4 +1,4 @@
-from api_functional.requests.connector import Connector
+from api_functional.rest_request.connector import Connector
 from lxml import objectify
 from lxml import etree
 
@@ -11,7 +11,7 @@ class XML_Tool:
             return f.read()
 
     def get_xml_from_webapi(self, id):
-        return Connector.get(self.__URL + str(id)).content
+        return Connector.get(url=(self.__URL + str(id)),headers={'accept': 'application/xml'}).content
 
     def create_objectify(self, dataxml):
         return objectify.fromstring(dataxml)

@@ -1,4 +1,4 @@
-from api_functional.requests.request import getapi
+from api_functional.rest_request.request import getapi
 from lxml import etree
 
 
