@@ -2,7 +2,7 @@ from data.pet.pet_provider import PetProvider
 
 
 def pet_rabbit():
-    return PetProvider(pet_id="1111",
+    return PetProvider(pet_id="1112",
                        pet_category_id="345",
                        pet_category_name="home",
                        pet_name="rabbit",

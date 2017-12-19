@@ -1,5 +1,5 @@
 from lxml import objectify
-from api_functional.rest_requests.connector import *
+from api_functional.rest_request.connector import *
 from data.pet import *
 
 # get pet by id
@@ -19,10 +19,9 @@ class Pet:
         self.__pet_category_name = pet_object.category.name.text
         self.__pet_name = pet_object.name.text
         self.__pet_photo_url = pet_object.photoUrls.photoUrl.text
-        self.__pet_tag_id = pet_object.tags.tag.id.text
-        self.__pet_tag_name = pet_object.tags.tag.name.text
+        #self.__pet_tag_id = pet_object.tags.tag.id.text
+        #self.__pet_tag_name = pet_object.tags.tag.name.text
         self.__pet_status = pet_object.status.text
-        pass
 
     # ------------- getters ----------------
     @property
@@ -45,13 +44,13 @@ class Pet:
     def photo_url(self):
         return self.__pet_photo_url
 
-    @property
-    def tag_id(self):
-        return self.__pet_tag_id
-
-    @property
-    def tag_name(self):
-        return self.__pet_tag_name
+    # @property
+    # def tag_id(self):
+    #     return self.__pet_tag_id
+    #
+    # @property
+    # def tag_name(self):
+    #     return self.__pet_tag_name
 
     @property
     def status(self):
@@ -91,7 +90,7 @@ class Pet:
         pass
 
     def delete(self):  # delete
-        Connector.delete(url, self.__H)
+        Connector.delete(self.__URL+self.id, self.__HEADERS_SINGLE)
 
     def upload_image(self, pet):  # post uploadImage
         pass

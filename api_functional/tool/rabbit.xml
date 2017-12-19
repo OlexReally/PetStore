@@ -1,0 +1,18 @@
+<Pet>
+    <category>
+        <id>0</id>
+        <name>pet888</name>
+    </category>
+    <id>1000</id>
+    <name>doggie888</name>
+    <photoUrls>
+        <photoUrl>string</photoUrl>
+    </photoUrls>
+    <status>available</status>
+    <tags>
+        <tag>
+            <id>0</id>
+            <name>string</name>
+        </tag>
+    </tags>
+</Pet>

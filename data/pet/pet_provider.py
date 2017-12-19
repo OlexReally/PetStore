@@ -48,22 +48,22 @@ class PetProvider:
     def post_pet_xml(self):
         post_pet_xml = '''<?xml version="1.0" encoding="UTF-8"?>
         <Pet>
-            <id>''' + self.pet_id + '''</id>
+            <id>''' + self.id + '''</id>
             <Category>
-                <id>''' + self.pet_category_id + '''</id>
-                <name>''' + self.pet_category_name + '''</name>
+                <id>''' + self.category_id + '''</id>
+                <name>''' + self.category_name + '''</name>
             </Category>
-            <name>''' + self.pet_name + '''</name>
+            <name>''' + self.name + '''</name>
                 <photoUrl>
-                <photoUrl>''' + self.pet_photo_url + '''</photoUrl>
+                <photoUrl>''' + self.photo_url + '''</photoUrl>
             </photoUrl>
             <tag>
                 <Tag>
-                    <id>''' + self.pet_tag_id + '''</id>
-                    <name>''' + self.pet_tag_name + '''</name>
+                    <id>''' + self.tag_id + '''</id>
+                    <name>''' + self.tag_name + '''</name>
                 </Tag>
             </tag>
-            <status>''' + self.pet_status + '''</status>
+            <status>''' + self.status + '''</status>
         </Pet>'''
 
         return post_pet_xml
