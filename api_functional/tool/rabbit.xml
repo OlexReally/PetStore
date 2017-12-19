@@ -1,8 +1,8 @@
 <Pet>
-    <category>
+    <Category>
         <id>0</id>
         <name>pet888</name>
-    </category>
+    </Category>
     <id>1000</id>
     <name>doggie888</name>
     <photoUrls>
@@ -10,9 +10,9 @@
     </photoUrls>
     <status>available</status>
     <tags>
-        <tag>
+        <Tag>
             <id>0</id>
             <name>string</name>
-        </tag>
+        </Tag>
     </tags>
 </Pet>
