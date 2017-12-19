@@ -80,21 +80,3 @@ class Pet:
     # def __add(self, pet):  # post
     #     objectify.fromstring(get(self.__URL, self.__HEADERS))
     #     pass
-
-    def update_full(self, pet):  # put
-        pass
-
-    def get_by_status(self, pet):  # get by status
-        pass
-
-    def get_by_id(self, pet):  # get by id
-        pass
-
-    def update_by_id(self, pet):  # post by id
-        pass
-
-    def delete(self):  # delete
-        Connector.delete(self.__URL+self.id, self.__HEADERS_SINGLE)
-
-    def upload_image(self, pet):  # post uploadImage
-        pass
