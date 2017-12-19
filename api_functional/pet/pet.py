@@ -5,9 +5,9 @@ from data.pet import *
 # get pet by id
 class Pet:
     # __URL = "http://petstore.swagger.io/v2/pet/1111"
-    __URL = "v2/pet/"
-    __HEADERS_SINGLE = {'accept': 'application/xml'}
-    __HEADERS_DOUBLE = {'accept': 'application/xml', 'Content-Type': 'application/xml'}
+    # __URL = "v2/pet/"
+    # __HEADERS_SINGLE = {'accept': 'application/xml'}
+    # __HEADERS_DOUBLE = {'accept': 'application/xml', 'Content-Type': 'application/xml'}
 
     def __init__(self, url, pet_object):
         self.__URL = url + self.__URL  # pet.id str(pet_id)
@@ -48,13 +48,13 @@ class Pet:
     def photo_url(self):
         return self.__pet_photo_url
 
-    # @property
-    # def tag_id(self):
-    #     return self.__pet_tag_id
-    #
-    # @property
-    # def tag_name(self):
-    #     return self.__pet_tag_name
+    @property
+    def tag_id(self):
+        return self.__pet_tag_id
+
+    @property
+    def tag_name(self):
+        return self.__pet_tag_name
 
     @property
     def status(self):
