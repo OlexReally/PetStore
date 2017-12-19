@@ -5,7 +5,7 @@ class Connector:
     # __URL = "http://petstore.swagger.io/v2/pet/"
     # __HEADERS = {'accept': 'application/xml'}
     # __URL = "http://petstore.swagger.io/v2/"
-    # __HEADERS = {'accept': 'application/xml'}
+    # __HEADERS = {'Content-Type' : 'application/xml'}
     # __PET = "pet/"
 
     @staticmethod

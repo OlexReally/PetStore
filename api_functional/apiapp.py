@@ -1,7 +1,8 @@
 import requests
 from lxml import etree
 
-from api_functional.tool.xml_tool import *
+from api_functional.pet.pet_creator import Creator
 
-b = XML_Tool()
-print(b.get_xml_from_webapi(1112))
+petnew = Creator()
+print(petnew.createPet(name='Andrii', status='TheBest'))
+
