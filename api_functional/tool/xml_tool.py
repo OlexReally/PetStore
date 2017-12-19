@@ -11,7 +11,7 @@ class XML_Tool:
             return f.read()
 
     def get_xml_from_webapi(self, id):
-        return Connector.get(url=(self.__URL + str(id)),headers={'accept': 'application/xml'}).content
+        return Connector.get(url=(self.__URL + str(id)), headers={'accept': 'application/xml'}).content
 
     def create_objectify(self, dataxml):
         return objectify.fromstring(dataxml)
