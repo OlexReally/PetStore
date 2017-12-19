@@ -9,7 +9,7 @@ class Connector:
     # __PET = "pet/"
 
     @staticmethod
-    def get(url, headers):
+    def get(url, headers={'accept': 'application/xml'}):
         answer = get(url, headers)
 
         if answer.status_code == 200:

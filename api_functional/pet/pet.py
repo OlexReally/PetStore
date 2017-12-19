@@ -40,6 +40,7 @@ class Pet:
     #     return self.response_object.tags.text
     # ------------- getters ----------------
 
+
     def __add(self, pet):  # post
         objectify.fromstring(get(self.__URL, self.__HEADERS))
         pass

@@ -1,0 +1,4 @@
+<apiResponse>
+    <message>Pet not found</message>
+    <type>error</type>
+</apiResponse>
