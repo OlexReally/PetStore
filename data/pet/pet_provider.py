@@ -12,35 +12,35 @@ class PetProvider:
         self.__pet_status = pet_status
 
     @property
-    def pet_id(self):
+    def id(self):
         return self.__pet_id
 
     @property
-    def pet_category_id(self):
+    def category_id(self):
         return self.__pet_category_id
 
     @property
-    def pet_category_name(self):
+    def category_name(self):
         return self.__pet_category_name
 
     @property
-    def pet_name(self):
+    def name(self):
         return self.__pet_name
 
     @property
-    def pet_photo_url(self):
+    def photo_url(self):
         return self.__pet_photo_url
 
     @property
-    def pet_tag_id(self):
+    def tag_id(self):
         return self.__pet_tag_id
 
     @property
-    def pet_tag_name(self):
+    def tag_name(self):
         return self.__pet_tag_name
 
     @property
-    def pet_status(self):
+    def status(self):
         return self.__pet_status
 
     # -------------------------------------------------------------------------------------------
