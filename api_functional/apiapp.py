@@ -1,9 +1,5 @@
 import requests
-from lxml import objectify
 from lxml import etree
-from api_functional.PetGetTags import PetGetTags
-from api_functional.Request import getapi
-
 
 url = "http://petstore.swagger.io/v2/pet/findByStatus?status=available"
 headers = {'accept': 'application/xml'}

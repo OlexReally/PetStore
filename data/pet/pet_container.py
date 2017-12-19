@@ -1,7 +1,7 @@
-from data.pet_provider import PetProvider
+from data.pet.pet_provider import PetProvider
 
 
-def get_rabbit():
+def pet_rabbit():
     return PetProvider(pet_id="1111",
                        pet_category_id="345",
                        pet_category_name="home",
@@ -12,7 +12,7 @@ def get_rabbit():
                        pet_status="available")
 
 
-def get_pet_dog():
+def pet_dog():
     return PetProvider(pet_id="1113",
                        pet_category_id="346",
                        pet_category_name="yard",
@@ -23,7 +23,7 @@ def get_pet_dog():
                        pet_status="available")
 
 
-def get_pet_cat():
+def pet_cat():
     return PetProvider(pet_id="1114",
                        pet_category_id="347",
                        pet_category_name="home",

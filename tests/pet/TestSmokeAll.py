@@ -1,7 +1,5 @@
 import pytest
-from data.pets import *
-from api_functional.Request import *
-from api_functional.PetGetTags import *
+from data.pet.pet_container import *
 
 
 def test_first():
