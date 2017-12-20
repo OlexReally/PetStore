@@ -26,12 +26,11 @@ class PetDriver:
         obj = objectify.parse(path).getroot()
         obj.name = name
         obj.status = status.value
-        # new_xml = etree.tostring(obj, pretty_print=True, xml_declaration=True)
-        # connect = Connector()
-        #
-        # pars = Parser()
-        # answer = connect.post(self.__URL, new_xml, headers=self.__HEADERS_DOUBLE)
-        return Pet(obj)
+        new_xml = etree.tostring(obj, pretty_print=True, xml_declaration=True)
+        connect = Connector()
+        answer = connect.post(self.__URL, new_xml, headers=self.__HEADERS_DOUBLE)
+
+        return Pet(objectify.fromstring(answer.content))
 
     def update(self, id_, name: str=None, status: Status=None):  # post by id
         connect = Connector()
@@ -42,11 +41,13 @@ class PetDriver:
             data = 'status=' + status.value
         if status is not None:
             data = data + '&status=' + status.value
+        connect.post((self.__URL + str(id_)), data, self.__HEADERS_UPDATE)
 
-        return connect.post((self.__URL+str(id_)), data, self.__HEADERS_UPDATE)
+        return self.get_pet(id_)
 
-    def get_by_id(self, _id):  # get by id
-        pass
+    def get_pet(self, id_):  # get by id
+        data_xml = Connector.get(self.__URL+str(id_), self.__HEADERS_SINGLE).content
+        return Pet(objectify.fromstring(data_xml))
 
     def get_xml(self, id_):
         return Connector.get(url=(self.__URL + str(id_)), headers=self.__HEADERS_SINGLE).content
