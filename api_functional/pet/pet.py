@@ -2,6 +2,7 @@ from lxml import objectify
 from api_functional.rest_request.connector import *
 from data.pet import *
 from api_functional.pet.pet_functional import *
+from tests.conftest import *
 
 class Pet:
     def __init__(self, pet_object):
@@ -19,12 +20,13 @@ class Pet:
         # self.__pet_tag_name = pet_object.tags.Tag.name.text
 
     def __pet_status_init(self, text):
-        if text == Status.AVAILABLE.value:
-            return Status.AVAILABLE
-        elif text == Status.PENDING.value:
-            return Status.PENDING
+        status = Status
+        if text == status.AVAILABLE.value:
+            return status.AVAILABLE
+        elif text == status.PENDING.value:
+            return status.PENDING
         else:
-            return Status.SOLD
+            return status.SOLD
 
     @property
     def id(self):
@@ -43,15 +45,15 @@ class Pet:
             self.__pet_name = name
         if status is not None:
             self.__pet_status = status
-        pdriver = PetDriver()
+        pdriver = PetDriver(HOST_URL)
         pdriver.update(self.id, name, status)
 
     def get(self):
-        pdriver = PetDriver()
+        pdriver = PetDriver(HOST_URL)
         pdriver.get_pet(self.id)
 
     def delete(self):
-        pdriver = PetDriver()
+        pdriver = PetDriver(HOST_URL)
         pdriver.delete_pet(self.id)
 
     # @property
