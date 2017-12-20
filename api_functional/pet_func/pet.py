@@ -1,9 +1,9 @@
-from lxml import objectify
-from api_functional.rest_request.connector import *
-from data.pet import *
-from api_functional.pet_func.pet_functional import PetStatus
-from api_functional.pet_func.pet_functional import PetDriver
-from tests.conftest import *
+#from lxml import objectify
+#from api_functional.rest_request.connector import *
+#from data.pet import *
+from api_functional.pet_func.pet_status import PetStatus
+# from api_functional.pet_func.pet_functional import PetDriver
+from tests.conftest import HOST_URL
 
 
 class Pet:
@@ -42,21 +42,21 @@ class Pet:
     def status(self):
         return self.__pet_status
 
-    def update(self, name=None, status=None):
-        if name is not None:
-            self.__pet_name = name
-        if status is not None:
-            self.__pet_status = status
-        pdriver = PetDriver(HOST_URL)
-        pdriver.update(self.id, name, status)
+    # def update(self, name=None, status=None):
+    #     if name is not None:
+    #         self.__pet_name = name
+    #     if status is not None:
+    #         self.__pet_status = status
+    #     pdriver = PetDriver(HOST_URL)
+    #     pdriver.update(self.id, name, status)
 
-    def get(self):
-        pdriver = PetDriver(HOST_URL)
-        pdriver.get_pet(self.id)
-
-    def delete(self):
-        pdriver = PetDriver(HOST_URL)
-        pdriver.delete_pet(self.id)
+    # def get(self):
+    #     pdriver = PetDriver(HOST_URL)
+    #     pdriver.get_pet(self.id)
+    #
+    # def delete(self):
+    #     pdriver = PetDriver(HOST_URL)
+    #     pdriver.delete_pet(self.id)
 
     # @property
     # def category_id(self):
