@@ -1,12 +1,15 @@
-import requests
-from lxml import etree
+from api_functional.pet.pet_functional import *
 
-from api_functional.pet.pet_creator import Creator
-from api_functional.pet.pet_functional import PetDriver
+petd = PetDriver('http://petstore.swagger.io/')
+status = Status
+id = petd.create_pet(name='Andrii', status=status.AVAILABLE)
+print(id)
 
-petnew = Creator()
+petd.update(id, name='Sanja', status=status.PENDING)
+print(petd.get_xml(id))
 
-pdriver = PetDriver()
-newid = petnew.createPet(name='Andrii', status='IDoThis')
-print(newid)
-print(pdriver.update_by_id(newid, "312 team", "we do this"))
+petd.update(id, name='Andrii')
+print(petd.get_xml(id))
+
+petd.update(id, status=status.AVAILABLE)
+print(petd.get_xml(id))
