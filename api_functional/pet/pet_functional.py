@@ -1,10 +1,15 @@
 from lxml import objectify
 from api_functional.rest_request.connector import *
+from api_functional.tool.xml_tool import XML_Tool
 from data.pet import *
 
 
 class PetDriver:
-    def update_full(self, pet):  # put
+    __HEADERS_DOUBLE = {'accept': 'application/xml', 'Content-Type': 'application/x-www-form-urlencoded'}
+    __HEADERS_SINGLE = {'accept': 'application/xml'}
+    __URL = 'http://petstore.swagger.io/v2/pet/'
+
+    def update_full(self, _id):  # put
         pass
 
     def get_by_status(self, pet):  # get by status
@@ -13,8 +18,18 @@ class PetDriver:
     def get_by_id(self, _id):  # get by id
         pass
 
-    def update_by_id(self, _id):  # post by id
-        pass
+    def update_by_id(self, _id, name=0, status=0):  # post by id
+        Connect = Connector()
+        if name != 0 and status != 0:
+            Connect.post((self.__URL+str(_id)), ('name='+name+'&status='+status), self.__HEADERS_DOUBLE)
+        elif name != 0:
+            Connect.post((self.__URL+str(_id)), ('name=' + name), self.__HEADERS_DOUBLE)
+        else:
+            Connect.post((self.__URL+str(_id)), ('&status=' + status), self.__HEADERS_DOUBLE)
+
+        tool = XML_Tool()
+        return tool.get_xml_from_webapi(_id)
+
 
     def delete(self):  # delete
         Connector.delete(self.__URL+self.id, self.__HEADERS_SINGLE)
