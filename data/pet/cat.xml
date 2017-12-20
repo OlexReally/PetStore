@@ -1,0 +1,18 @@
+<Pet>
+    <Category>
+        <id>0</id>
+        <name>cat_category007</name>
+    </Category>
+    <id>1111</id>
+    <name>cat007</name>
+    <photoUrls>
+        <photoUrl>url_link</photoUrl>
+    </photoUrls>
+    <status>available</status>
+    <tags>
+        <Tag>
+            <id>0</id>
+            <name>string</name>
+        </Tag>
+    </tags>
+</Pet>

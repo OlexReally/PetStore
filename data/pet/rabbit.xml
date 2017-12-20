@@ -1,12 +1,12 @@
 <Pet>
     <Category>
         <id>0</id>
-        <name>pet888</name>
+        <name>rabbit_category007</name>
     </Category>
-    <id>1000</id>
-    <name>doggie888</name>
+    <id>1113</id>
+    <name>rabbit007</name>
     <photoUrls>
-        <photoUrl>string</photoUrl>
+        <photoUrl>url_link</photoUrl>
     </photoUrls>
     <status>available</status>
     <tags>

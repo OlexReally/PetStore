@@ -1,6 +1,6 @@
 from data.pet.pet_provider import PetProvider
 
-
+'''
 def pet_rabbit():
     return PetProvider(pet_id="1112",
                        pet_category_id="345",
@@ -32,3 +32,4 @@ def pet_cat():
                        pet_tag_id="545",
                        pet_tag_name="tag",
                        pet_status="available")
+'''

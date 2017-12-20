@@ -2,11 +2,8 @@ from api_functional.rest_request.request import *
 
 
 class Connector:
-    # __URL = "http://petstore.swagger.io/v2/pet/"
-    # __HEADERS = {'accept': 'application/xml'}
-    # __URL = "http://petstore.swagger.io/v2/"
-    # __HEADERS = {'Content-Type' : 'application/xml'}
-    # __PET = "pet/"
+    # __HEADERS_SINGLE = {'accept': 'application/xml'}
+    # __HEADERS_DOUBLE = {'accept': 'application/xml', 'Content-Type': 'application/x-www-form-urlencoded'}
 
     @staticmethod
     def get(url, headers):
