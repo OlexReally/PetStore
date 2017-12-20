@@ -1,6 +1,6 @@
 import pytest
 
-HOST = "http://petstore.swagger.io/"
+HOST_URL = "http://petstore.swagger.io/"
 
 # @pytest.fixture()
 # def url_provider():

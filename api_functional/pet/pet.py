@@ -2,15 +2,9 @@ from lxml import objectify
 from api_functional.rest_request.connector import *
 from data.pet import *
 
-# get pet by id
-class Pet:
-    # __URL = "http://petstore.swagger.io/v2/pet/1111"
-    # __URL = "v2/pet/"
-    # __HEADERS_SINGLE = {'accept': 'application/xml'}
-    # __HEADERS_DOUBLE = {'accept': 'application/xml', 'Content-Type': 'application/xml'}
 
-    def __init__(self, url, pet_object):
-        self.__URL = url + self.__URL  # pet.id str(pet_id)
+class Pet:
+    def __init__(self, pet_object):
         self.__pet_init(pet_object)
 
     def __pet_init(self, pet_object):
@@ -24,7 +18,6 @@ class Pet:
         # self.__pet_tag_id = pet_object.tags.Tag.id.text
         # self.__pet_tag_name = pet_object.tags.Tag.name.text
 
-    # ------------- getters ----------------
     @property
     def id(self):
         return self.__pet_id
@@ -56,26 +49,3 @@ class Pet:
     # @property
     # def tag_name(self):
     #     return self.__pet_tag_name
-
-
-
-    # def id_tag(self):
-    #     return self.response_object.id.text
-    #
-    # def name_tag(self):
-    #     return self.response_object.name.text
-    #
-    # def photourls_tag(self):
-    #     return self.response_object.photoUrls.text
-    #
-    # def status_tag(self):
-    #     return self.response_object.status.text
-    #
-    # def tags_tag(self):
-    #     return self.response_object.tags.text
-    # ------------- getters ----------------
-
-    # post not need
-    # def __add(self, pet):  # post
-    #     objectify.fromstring(get(self.__URL, self.__HEADERS))
-    #     pass
