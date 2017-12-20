@@ -1,8 +1,5 @@
-from lxml import objectify
-from api_functional.rest_request.connector import *
 from lxml import etree
 from enum import Enum
-from api_functional.pet.pars import Parser
 from api_functional.pet.pet import *
 
 
@@ -21,9 +18,7 @@ class PetDriver:
     def __init__(self, url):
         self.__URL = url + self.__URL  # http://petstore.swagger.io/    +   v2/pet/
 
-    def create_pet(self, name: str, status: Status):
-        path = r'D:\PetStore\api_functional\tool\pet.xml'
-        obj = objectify.parse(path).getroot()
+    def create_pet(self, obj, name: str, status: Status):
         obj.name = name
         obj.status = status.value
         new_xml = etree.tostring(obj, pretty_print=True, xml_declaration=True)
@@ -48,6 +43,9 @@ class PetDriver:
     def get_pet(self, id_):  # get by id
         data_xml = Connector.get(self.__URL+str(id_), self.__HEADERS_SINGLE).content
         return Pet(objectify.fromstring(data_xml))
+
+    def delete_pet(self, id_):
+        Connector.delete(self.__URL+str(id_), self.__HEADERS_SINGLE)
 
     def get_xml(self, id_):
         return Connector.get(url=(self.__URL + str(id_)), headers=self.__HEADERS_SINGLE).content

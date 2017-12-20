@@ -1,7 +1,7 @@
 from lxml import objectify
 from api_functional.rest_request.connector import *
 from data.pet import *
-
+from api_functional.pet.pet_functional import *
 
 class Pet:
     def __init__(self, pet_object):
@@ -29,6 +29,22 @@ class Pet:
     @property
     def status(self):
         return self.__pet_status
+
+    def update(self, name=None, status=None):
+        if name is not None:
+            self.__pet_name = name
+        if status is not None:
+            self.__pet_status = status.value
+        pdriver = PetDriver()
+        pdriver.update(self.id, name, status.value)
+
+    def get(self):
+        pdriver = PetDriver()
+        pdriver.get_pet(self.id)
+
+    def delete(self):
+        pdriver = PetDriver()
+        pdriver.delete_pet(self.id)
 
     # @property
     # def category_id(self):
