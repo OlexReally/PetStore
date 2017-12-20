@@ -1,11 +1,11 @@
 import pytest
 from lxml import objectify
 
-CAT_PATH = '/PetStore/data/pet/rabbit.xml'
-DOG_PATH = '/PetStore/data/pet/dog.xml'
-RABBIT_PATH = '/PetStore/data/pet/rabbit.xml'
+CAT_PATH = '/PetStore/data/pet_func/rabbit.xml'
+DOG_PATH = '/PetStore/data/pet_func/dog.xml'
+RABBIT_PATH = '/PetStore/data/pet_func/rabbit.xml'
 
-# tests/pet/conftest.py
+# tests/pet_func/conftest.py
 
 
 # pet_obj = objectify.fromstring(pet_data_provider)

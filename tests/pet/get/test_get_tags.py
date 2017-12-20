@@ -1,4 +1,4 @@
-from api_functional.pet.pet import *
+from api_functional.pet_func.pet import *
 
 
 def test_tags():

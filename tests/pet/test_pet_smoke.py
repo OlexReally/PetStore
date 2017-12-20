@@ -1,7 +1,7 @@
 from data.pet.pet_container import *
 from api_functional.pet_func.pet_functional import PetDriver
 from api_functional.pet_func.pet_functional import PetStatus
-from tests.conftest import *
+from tests.conftest import HOST_URL
 
 
 def test_pet():
