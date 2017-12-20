@@ -10,13 +10,21 @@ class Pet:
     def __pet_init(self, pet_object):
         self.__pet_id = pet_object.id.text
         self.__pet_name = pet_object.name.text
-        self.__pet_status = pet_object.status.text
+        self.__pet_status = self.__pet_status_init(pet_object.status.text)
 
         # self.__pet_category_id = pet_object.Category.id.text
         # self.__pet_category_name = pet_object.Category.name.text
         # self.__pet_photo_url = pet_object.photoUrls.photoUrl.text
         # self.__pet_tag_id = pet_object.tags.Tag.id.text
         # self.__pet_tag_name = pet_object.tags.Tag.name.text
+
+    def __pet_status_init(self, text):
+        if text == Status.AVAILABLE.value:
+            return Status.AVAILABLE
+        elif text == Status.PENDING.value:
+            return Status.PENDING
+        else:
+            return Status.SOLD
 
     @property
     def id(self):
