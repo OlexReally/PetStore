@@ -5,9 +5,12 @@ from data.pet import *
 
 
 class PetDriver:
-    __HEADERS_DOUBLE = {'accept': 'application/xml', 'Content-Type': 'application/x-www-form-urlencoded'}
+    __URL = "v2/pet/"
     __HEADERS_SINGLE = {'accept': 'application/xml'}
-    __URL = 'http://petstore.swagger.io/v2/pet/'
+    __HEADERS_DOUBLE = {'accept': 'application/xml', 'Content-Type': 'application/x-www-form-urlencoded'}
+
+    def __init__(self, url):
+        self.__URL = url + self.__URL  # http://petstore.swagger.io/    +   v2/pet/
 
     def update_full(self, _id):  # put
         pass
