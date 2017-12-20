@@ -24,4 +24,4 @@ def test_pet():
     with pytest.raises(RuntimeError) as info:
         pet_driver.get_pet(pet.id)
 
-    print(info)
+    assert str(info.value) == "Requested data not found"
