@@ -3,6 +3,7 @@ from api_functional.rest_request.connector import *
 from lxml import etree
 from enum import Enum
 from api_functional.pet.pars import Parser
+from api_functional.pet.pet import *
 
 
 class Status(Enum):
@@ -25,12 +26,12 @@ class PetDriver:
         obj = objectify.parse(path).getroot()
         obj.name = name
         obj.status = status.value
-        new_xml = etree.tostring(obj, pretty_print=True, xml_declaration=True)
-        connect = Connector()
-
-        pars = Parser()
-        answer = connect.post(self.__URL, new_xml, headers=self.__HEADERS_DOUBLE)
-        return pars.get_id_from_xml(answer.content)
+        # new_xml = etree.tostring(obj, pretty_print=True, xml_declaration=True)
+        # connect = Connector()
+        #
+        # pars = Parser()
+        # answer = connect.post(self.__URL, new_xml, headers=self.__HEADERS_DOUBLE)
+        return Pet(obj)
 
     def update(self, id_, name: str=None, status: Status=None):  # post by id
         connect = Connector()
@@ -43,9 +44,6 @@ class PetDriver:
             data = data + '&status=' + status.value
 
         return connect.post((self.__URL+str(id_)), data, self.__HEADERS_UPDATE)
-
-    def get_by_status(self, pet):  # get by status
-        pass
 
     def get_by_id(self, _id):  # get by id
         pass
