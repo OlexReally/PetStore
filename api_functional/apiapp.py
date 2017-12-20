@@ -1,7 +1,7 @@
-from api_functional.pet.pet_functional import *
+from api_functional.pet_func.pet_functional import *
 
 petd = PetDriver('http://petstore.swagger.io/')
-status = Status
+status = PetStatus
 id = petd.create_pet(name='Andrii', status=status.AVAILABLE)
 print(id)
 
