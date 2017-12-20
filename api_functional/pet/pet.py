@@ -34,9 +34,9 @@ class Pet:
         if name is not None:
             self.__pet_name = name
         if status is not None:
-            self.__pet_status = status.value
+            self.__pet_status = status
         pdriver = PetDriver()
-        pdriver.update(self.id, name, status.value)
+        pdriver.update(self.id, name, status)
 
     def get(self):
         pdriver = PetDriver()
