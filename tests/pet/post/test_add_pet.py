@@ -2,6 +2,8 @@ import pytest
 from api_functional.pet_func.pet import Pet
 from tests.conftest import HOST_URL
 from api_functional.pet_func.pet_functional import PetDriver
+import logging
+import sys
 
 
 def test_add_pet(pet_provider):

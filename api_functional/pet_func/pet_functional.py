@@ -4,7 +4,7 @@ from api_functional.rest_request.connector import Connector
 from api_functional.pet_func.pet import Pet
 from lxml import objectify
 from api_functional.pet_func.pet_status import PetStatus
-
+import logging as log
 
 class PetDriver:
     __URL = "v2/pet/"
@@ -16,6 +16,9 @@ class PetDriver:
         self.__URL = url + self.__URL
 
     def create_pet(self, obj):
+        log.info("THIS IS INFO")
+        log.warning("THIS IS WARNING")
+        log.critical("THIS IS CRITICAL")
 
         new_xml = etree.tostring(obj, pretty_print=True, xml_declaration=True)
         connect = Connector()
