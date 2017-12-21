@@ -2,8 +2,6 @@ from api_functional.rest_request.request import *
 
 
 class Connector:
-    # __HEADERS_SINGLE = {'accept': 'application/xml'}
-    # __HEADERS_DOUBLE = {'accept': 'application/xml', 'Content-Type': 'application/x-www-form-urlencoded'}
 
     @staticmethod
     def get(url, headers):
