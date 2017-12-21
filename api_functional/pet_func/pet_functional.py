@@ -39,7 +39,7 @@ class PetDriver:
         return Pet(objectify.fromstring(data_xml))
 
     def delete_pet(self, id_):
-        Connector.delete(self.__URL+str(id_), self.__HEADERS_SINGLE)
+        return Connector.delete(self.__URL+str(id_), self.__HEADERS_SINGLE)
 
     def get_xml(self, id_):
         return Connector.get(url=(self.__URL + str(id_)), headers=self.__HEADERS_SINGLE).content
