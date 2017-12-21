@@ -17,9 +17,18 @@ def wrong_pet_provider(request):
 
 def pytest_sessionstart():
     log = logging.getLogger()
-    out_hdlr = logging.FileHandler('LogPet.log')
-    out_hdlr.setFormatter(logging.Formatter('%(asctime)s %(message)s'))
+    out_hdlr = logging.FileHandler(r"logfile.txt", encoding="utf-8")
+    out_hdlr.setFormatter(logging.Formatter(u'# %(levelname)-8s [%(asctime)s] %(filename)-20s [LINE:%(lineno)s]'
+                                            u'%(message)s'))
     out_hdlr.setLevel(LOG_LVL)
 
     log.addHandler(out_hdlr)
     log.setLevel(LOG_LVL)
+
+
+def pytest_runtest_setup(item):
+    logging.info("====={}=====".format(item.name))
+
+
+def pytest_runtest_teardown(item):
+    logging.info("====={}=====".format(item.name))
