@@ -25,7 +25,7 @@ class Connector:
         elif answer.status_code == 400:
             raise RuntimeError('Bad Request')
         elif answer.status_code == 404:
-            raise RuntimeError('Not Found')
+            raise RuntimeError('Requested data not found')
 
     @staticmethod
     def delete(url, headers):

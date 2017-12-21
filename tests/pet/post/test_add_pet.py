@@ -28,4 +28,4 @@ def test_update_pet_negative(wrong_pet_provider):
     with pytest.raises(RuntimeError) as error:
         pet_driver.update(id_="qwe")
 
-    assert str(error.value) == 'Not Found'
+    assert str(error.value) == 'Requested data not found'
