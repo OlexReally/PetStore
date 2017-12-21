@@ -1,3 +1,4 @@
 {
-  "TestDelete.py::test_delete_excist": true
+  "TestDelete.py::test_delete_excist": true,
+  "TestDelete.py::test_delete_not_existing_pet": true
 }
