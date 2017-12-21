@@ -22,6 +22,10 @@ class Connector:
             return answer
         elif answer.status_code == 405:
             raise RuntimeError('Invalid input')
+        elif answer.status_code == 400:
+            raise RuntimeError('Bad Request')
+        elif answer.status_code == 404:
+            raise RuntimeError('Not Found')
 
     @staticmethod
     def delete(url, headers):

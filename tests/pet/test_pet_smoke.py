@@ -7,18 +7,12 @@ from tests.conftest import HOST_URL
 import pytest
 
 
-def test_pet():
+def test_pet(pet_provider):
     pet_driver = PetDriver(HOST_URL)
-    pet = pet_driver.create_pet(cat_pet())  # , "rabbit007", status=PetStatus.AVAILABLE)
-    print(pet.id)
-    print(pet.name)
-    print(pet.status.value)
+    pet = pet_driver.create_pet(pet_provider)  # , "rabbit007", status=PetStatus.AVAILABLE)
 
     pet_driver.update(pet.id, name="murchik", status=PetStatus.SOLD)
     pet = pet_driver.get_pet(pet.id)
-    print(pet.id)
-    print(pet.name)
-    print(pet.status.value)
 
     pet_driver.delete_pet(pet.id)
     with pytest.raises(RuntimeError) as info:
