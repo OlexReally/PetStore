@@ -35,19 +35,18 @@ class PetDriver:
         if status is not None:
             data = data + '&status=' + status.value
 
-        log.debug('Send POST(update) request for pet with: id= ' + str(id_) + ' name= ' + str(name)
-                  + ' status= ' + str(status))
+        log.debug('Send POST(update) request for pet with: id= %s, name= %s, stats= %s', id_, name, status.value)
         connect.post((self.__URL + str(id_)), data, self.__HEADERS_UPDATE)
 
     def get_pet(self, id_):
-        log.debug('Send GET request for pet with: id= %d', id_)
+        log.debug('Send GET request for pet with: id= %s', id_)
         data_xml = Connector.get(self.__URL+str(id_), self.__HEADERS_SINGLE).content
         return Pet(objectify.fromstring(data_xml))
 
     def delete_pet(self, id_):
-        log.debug('Send DELETE request for pet with: id= %d', id_)
+        log.debug('Send DELETE request for pet with: id= %s', id_)
         return Connector.delete(self.__URL+str(id_), self.__HEADERS_SINGLE)
 
     def get_xml(self, id_):
-        log.debug('Try to get XML from server for pet with: id= %d', id_)
+        log.debug('Try to get XML from server for pet with: id= %s', id_)
         return Connector.get(url=(self.__URL + str(id_)), headers=self.__HEADERS_SINGLE).content
