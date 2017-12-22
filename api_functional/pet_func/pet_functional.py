@@ -35,7 +35,8 @@ class PetDriver:
         if status is not None:
             data = data + '&status=' + status.value
 
-        log.debug('Send POST(update) request for pet with: id= %s, name= %s, stats= %s', id_, name, status.value)
+        log.debug('Send POST(update) request for pet with: id= ' + str(id_) + ' name= ' + str(name)
+                  + ' status= ' + str(status))
         connect.post((self.__URL + str(id_)), data, self.__HEADERS_UPDATE)
 
     def get_pet(self, id_):
