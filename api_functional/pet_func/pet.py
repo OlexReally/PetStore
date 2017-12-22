@@ -11,7 +11,7 @@ class Pet:
     def __init__(self, pet_object):
         self.__pet_init(pet_object)
         log.info("New pet instance created")
-        log.info("New pet instance created with id=%s and name=%s", self.id, self.name)
+        log.debug("New pet instance created with id=%s and name=%s", self.id, self.name)
 
     def __pet_init(self, pet_object):
         self.__pet_id = pet_object.id.text

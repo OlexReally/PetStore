@@ -49,3 +49,48 @@
 # INFO     [2017-12-22 13:01:36,417] pet.py               [LINE:14]New pet instance created with id=9123612807670153771 and name=rabbit007
 # PASS     [2017-12-22 13:01:36,420] conftest.py          [LINE:14]Test test_get_pet[pet_provider2] passed.
 # INFO     [2017-12-22 13:01:36,421] conftest.py          [LINE:53]=====test_get_pet[pet_provider2]=====
+# INFO     [2017-12-22 13:28:46,890] conftest.py          [LINE:48]=====test_get_pet[pet_provider0]=====
+# INFO     [2017-12-22 13:28:46,890] conftest.py          [LINE:49]None
+# INFO     [2017-12-22 13:28:46,891] pet.py               [LINE:13]New pet instance created
+# INFO     [2017-12-22 13:28:46,891] pet.py               [LINE:14]New pet instance created with id=0 and name=cat007
+# DEBUG    [2017-12-22 13:28:46,891] pet_functional.py    [LINE:21]Send POST Requst with obj as XML
+# DEBUG    [2017-12-22 13:28:46,896] connectionpool.py    [LINE:208]Starting new HTTP connection (1): petstore.swagger.io
+# DEBUG    [2017-12-22 13:28:47,133] connectionpool.py    [LINE:396]http://petstore.swagger.io:80 "POST /v2/pet/ HTTP/1.1" 200 None
+# INFO     [2017-12-22 13:28:47,135] pet.py               [LINE:13]New pet instance created
+# INFO     [2017-12-22 13:28:47,135] pet.py               [LINE:14]New pet instance created with id=9123612807670153868 and name=cat007
+# DEBUG    [2017-12-22 13:28:47,154] connectionpool.py    [LINE:208]Starting new HTTP connection (1): petstore.swagger.io
+# DEBUG    [2017-12-22 13:28:47,386] connectionpool.py    [LINE:396]http://petstore.swagger.io:80 "GET /v2/pet/9123612807670153868 HTTP/1.1" 200 None
+# INFO     [2017-12-22 13:28:47,388] pet.py               [LINE:13]New pet instance created
+# INFO     [2017-12-22 13:28:47,389] pet.py               [LINE:14]New pet instance created with id=9123612807670153868 and name=cat007
+# PASS     [2017-12-22 13:28:47,393] conftest.py          [LINE:14]Test test_get_pet[pet_provider0] passed.
+# INFO     [2017-12-22 13:28:47,410] conftest.py          [LINE:53]=====test_get_pet[pet_provider0]=====
+# INFO     [2017-12-22 13:28:47,414] conftest.py          [LINE:48]=====test_get_pet[pet_provider1]=====
+# INFO     [2017-12-22 13:28:47,414] conftest.py          [LINE:49]None
+# INFO     [2017-12-22 13:28:47,416] pet.py               [LINE:13]New pet instance created
+# INFO     [2017-12-22 13:28:47,417] pet.py               [LINE:14]New pet instance created with id=0 and name=dog007
+# DEBUG    [2017-12-22 13:28:47,417] pet_functional.py    [LINE:21]Send POST Requst with obj as XML
+# DEBUG    [2017-12-22 13:28:47,422] connectionpool.py    [LINE:208]Starting new HTTP connection (1): petstore.swagger.io
+# DEBUG    [2017-12-22 13:28:47,660] connectionpool.py    [LINE:396]http://petstore.swagger.io:80 "POST /v2/pet/ HTTP/1.1" 200 None
+# INFO     [2017-12-22 13:28:47,662] pet.py               [LINE:13]New pet instance created
+# INFO     [2017-12-22 13:28:47,662] pet.py               [LINE:14]New pet instance created with id=9123612807670153869 and name=dog007
+# DEBUG    [2017-12-22 13:28:47,670] connectionpool.py    [LINE:208]Starting new HTTP connection (1): petstore.swagger.io
+# DEBUG    [2017-12-22 13:28:47,905] connectionpool.py    [LINE:396]http://petstore.swagger.io:80 "GET /v2/pet/9123612807670153869 HTTP/1.1" 200 None
+# INFO     [2017-12-22 13:28:47,907] pet.py               [LINE:13]New pet instance created
+# INFO     [2017-12-22 13:28:47,907] pet.py               [LINE:14]New pet instance created with id=9123612807670153869 and name=dog007
+# PASS     [2017-12-22 13:28:47,911] conftest.py          [LINE:14]Test test_get_pet[pet_provider1] passed.
+# INFO     [2017-12-22 13:28:47,925] conftest.py          [LINE:53]=====test_get_pet[pet_provider1]=====
+# INFO     [2017-12-22 13:28:47,928] conftest.py          [LINE:48]=====test_get_pet[pet_provider2]=====
+# INFO     [2017-12-22 13:28:47,929] conftest.py          [LINE:49]None
+# INFO     [2017-12-22 13:28:47,931] pet.py               [LINE:13]New pet instance created
+# INFO     [2017-12-22 13:28:47,931] pet.py               [LINE:14]New pet instance created with id=0 and name=rabbit007
+# DEBUG    [2017-12-22 13:28:47,932] pet_functional.py    [LINE:21]Send POST Requst with obj as XML
+# DEBUG    [2017-12-22 13:28:47,935] connectionpool.py    [LINE:208]Starting new HTTP connection (1): petstore.swagger.io
+# DEBUG    [2017-12-22 13:28:48,171] connectionpool.py    [LINE:396]http://petstore.swagger.io:80 "POST /v2/pet/ HTTP/1.1" 200 None
+# INFO     [2017-12-22 13:28:48,173] pet.py               [LINE:13]New pet instance created
+# INFO     [2017-12-22 13:28:48,173] pet.py               [LINE:14]New pet instance created with id=9123612807670153870 and name=rabbit007
+# DEBUG    [2017-12-22 13:28:48,182] connectionpool.py    [LINE:208]Starting new HTTP connection (1): petstore.swagger.io
+# DEBUG    [2017-12-22 13:28:48,414] connectionpool.py    [LINE:396]http://petstore.swagger.io:80 "GET /v2/pet/9123612807670153870 HTTP/1.1" 200 None
+# INFO     [2017-12-22 13:28:48,417] pet.py               [LINE:13]New pet instance created
+# INFO     [2017-12-22 13:28:48,417] pet.py               [LINE:14]New pet instance created with id=9123612807670153870 and name=rabbit007
+# PASS     [2017-12-22 13:28:48,421] conftest.py          [LINE:14]Test test_get_pet[pet_provider2] passed.
+# INFO     [2017-12-22 13:28:48,453] conftest.py          [LINE:53]=====test_get_pet[pet_provider2]=====
