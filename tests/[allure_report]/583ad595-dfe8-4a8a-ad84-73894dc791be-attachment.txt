@@ -1,3 +1,0 @@
-pet_functional.py           21 DEBUG    Send POST Requst with obj as XML
-connectionpool.py          208 DEBUG    Starting new HTTP connection (1): petstore.swagger.io
-connectionpool.py          396 DEBUG    http://petstore.swagger.io:80 "POST /v2/pet/ HTTP/1.1" 400 None
