@@ -1,0 +1,19 @@
+pet_functional.py           21 DEBUG    Send POST Requst with obj as XML
+connectionpool.py          208 DEBUG    Starting new HTTP connection (1): petstore.swagger.io
+connectionpool.py          396 DEBUG    http://petstore.swagger.io:80 "POST /v2/pet/ HTTP/1.1" 200 None
+pet.py                      13 INFO     New pet instance created
+pet.py                      14 DEBUG    New pet instance created with id=9123612807670154127 and name=rabbit007
+pet_functional.py           39 DEBUG    Send POST(update) request for pet with: id= 9123612807670154127 name= murchik status= PetStatus.SOLD
+connectionpool.py          208 DEBUG    Starting new HTTP connection (1): petstore.swagger.io
+connectionpool.py          396 DEBUG    http://petstore.swagger.io:80 "POST /v2/pet/9123612807670154127 HTTP/1.1" 200 None
+pet_functional.py           43 DEBUG    Send GET request for pet with: id= 9123612807670154127
+connectionpool.py          208 DEBUG    Starting new HTTP connection (1): petstore.swagger.io
+connectionpool.py          396 DEBUG    http://petstore.swagger.io:80 "GET /v2/pet/9123612807670154127 HTTP/1.1" 200 None
+pet.py                      13 INFO     New pet instance created
+pet.py                      14 DEBUG    New pet instance created with id=9123612807670154127 and name=murchik
+pet_functional.py           48 DEBUG    Send DELETE request for pet with: id= 9123612807670154127
+connectionpool.py          208 DEBUG    Starting new HTTP connection (1): petstore.swagger.io
+connectionpool.py          396 DEBUG    http://petstore.swagger.io:80 "DELETE /v2/pet/9123612807670154127 HTTP/1.1" 200 None
+pet_functional.py           43 DEBUG    Send GET request for pet with: id= 9123612807670154127
+connectionpool.py          208 DEBUG    Starting new HTTP connection (1): petstore.swagger.io
+connectionpool.py          396 DEBUG    http://petstore.swagger.io:80 "GET /v2/pet/9123612807670154127 HTTP/1.1" 404 None

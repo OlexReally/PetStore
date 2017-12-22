@@ -1,0 +1,51 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1513946536017" stop="1513946539728">
+  <name>tests.pet.test_pet_smoke</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1513946536017" status="passed" stop="1513946537250">
+      <name>test_pet[pet_provider0]</name>
+      <attachments>
+        <attachment source="394f0ce5-473d-4a61-a4cf-556d468b0053-attachment.txt" title="Captured log setup" type="text/plain"/>
+        <attachment source="e1e7be8a-8f3f-4cbb-89d9-b35ccdf2873b-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="9452-MainThread"/>
+        <label name="host" value="zamba"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1513946537273" status="passed" stop="1513946538491">
+      <name>test_pet[pet_provider1]</name>
+      <attachments>
+        <attachment source="0bbf6e7a-e744-43d9-b328-ed6ae88407dd-attachment.txt" title="Captured log setup" type="text/plain"/>
+        <attachment source="3b2a6658-ea0c-45b2-9cbf-249e81b7740a-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="9452-MainThread"/>
+        <label name="host" value="zamba"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1513946538516" status="passed" stop="1513946539728">
+      <name>test_pet[pet_provider2]</name>
+      <attachments>
+        <attachment source="704ab7ea-de15-4729-91f5-4d77f63bf3d1-attachment.txt" title="Captured log setup" type="text/plain"/>
+        <attachment source="4445a64d-bf58-4000-a7d8-8e39a870ca77-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="9452-MainThread"/>
+        <label name="host" value="zamba"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
