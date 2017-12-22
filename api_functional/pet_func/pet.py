@@ -1,6 +1,7 @@
 #from lxml import objectify
 #from api_functional.rest_request.connector import *
 #from data.pet import *
+import logging as log
 from api_functional.pet_func.pet_status import PetStatus
 # from api_functional.pet_func.pet_functional import PetDriver
 from tests.conftest import HOST_URL
@@ -9,6 +10,8 @@ from tests.conftest import HOST_URL
 class Pet:
     def __init__(self, pet_object):
         self.__pet_init(pet_object)
+        log.info("New pet instance created")
+        log.info("New pet instance created with id=%s and name=%s", self.id, self.name)
 
     def __pet_init(self, pet_object):
         self.__pet_id = pet_object.id.text
