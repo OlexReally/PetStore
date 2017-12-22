@@ -55,6 +55,7 @@ def pytest_runtest_teardown(item):
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_runtest_makereport(item, call):
+    pytest_plugins = 'allure.pytest_plugin'
 
     outcome = yield
     rep = outcome.get_result()
