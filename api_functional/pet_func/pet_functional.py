@@ -6,6 +6,7 @@ from lxml import objectify
 from api_functional.pet_func.pet_status import PetStatus
 import logging as log
 
+
 class PetDriver:
     __URL = "v2/pet/"
     __HEADERS_SINGLE = {'accept': 'application/xml'}
@@ -16,10 +17,8 @@ class PetDriver:
         self.__URL = url + self.__URL
 
     def create_pet(self, obj):
-        log.info("THIS IS INFO")
-        log.warning("THIS IS WARNING")
-        log.critical("THIS IS CRITICAL")
 
+        log.debug('Send POST Requst with obj as XML')
         new_xml = etree.tostring(obj, pretty_print=True, xml_declaration=True)
         connect = Connector()
         answer = connect.post(self.__URL, new_xml, headers=self.__HEADERS_DOUBLE)
@@ -35,14 +34,19 @@ class PetDriver:
             data = 'status=' + status.value
         if status is not None:
             data = data + '&status=' + status.value
+
+        log.debug('Send POST(update) request for pet with: id= %d, name= %s, stats= %s', id_, name, status.value)
         connect.post((self.__URL + str(id_)), data, self.__HEADERS_UPDATE)
 
     def get_pet(self, id_):
+        log.debug('Send GET request for pet with: id= %d', id_)
         data_xml = Connector.get(self.__URL+str(id_), self.__HEADERS_SINGLE).content
         return Pet(objectify.fromstring(data_xml))
 
     def delete_pet(self, id_):
+        log.debug('Send DELETE request for pet with: id= %d', id_)
         return Connector.delete(self.__URL+str(id_), self.__HEADERS_SINGLE)
 
     def get_xml(self, id_):
+        log.debug('Try to get XML from server for pet with: id= %d', id_)
         return Connector.get(url=(self.__URL + str(id_)), headers=self.__HEADERS_SINGLE).content
