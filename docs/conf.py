@@ -22,8 +22,8 @@ import sys
 import sphinx_rtd_theme
 
 sys.path.insert(0, os.path.abspath('..'))
-# D:\PetStore\api_functional
-# sys.path.insert(0, "D:\\PetStore\\api_functional\\pet_func")
+# D:\PetStore\pet_store
+# sys.path.insert(0, "D:\\PetStore\\pet_store\\pet_func")
 
 
 # -- General configuration ------------------------------------------------

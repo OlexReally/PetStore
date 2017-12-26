@@ -1,7 +1,7 @@
 """
 Wrapper for request module
 """
-from api_functional.rest_request.request import *
+from pet_store.rest_request.request import *
 
 
 class Connector:
