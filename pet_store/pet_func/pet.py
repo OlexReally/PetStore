@@ -2,7 +2,7 @@
     Contains class Pet
 """
 import logging as log
-from api_functional.pet_func.pet_status import PetStatus
+from pet_store.pet_func.pet_status import PetStatus
 
 
 class Pet:

@@ -1,7 +1,7 @@
 import pytest
-from api_functional.pet_func.pet import Pet
+from pet_store.pet_func.pet import Pet
 from tests.conftest import HOST_URL
-from api_functional.pet_func.pet_functional import PetDriver
+from pet_store.pet_func.pet_functional import PetDriver
 import logging
 import sys
 

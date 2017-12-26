@@ -1,5 +1,5 @@
-from api_functional.pet_func.pet import *
-from api_functional.pet_func.pet_functional import PetDriver
+from pet_store.pet_func.pet import *
+from pet_store.pet_func.pet_functional import PetDriver
 
 
 def test_get_pet(pet_provider):

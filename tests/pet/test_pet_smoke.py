@@ -1,8 +1,8 @@
 from data.pet.pet_container import rabbit_pet
 from data.pet.pet_container import dog_pet
 from data.pet.pet_container import cat_pet
-from api_functional.pet_func.pet_functional import PetDriver
-from api_functional.pet_func.pet_status import PetStatus
+from pet_store.pet_func.pet_functional import PetDriver
+from pet_store.pet_func.pet_status import PetStatus
 from tests.conftest import HOST_URL
 import pytest
 

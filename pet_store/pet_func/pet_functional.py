@@ -3,10 +3,10 @@
 """
 
 from lxml import etree
-from api_functional.rest_request.connector import Connector
-from api_functional.pet_func.pet import Pet
+from pet_store.rest_request.connector import Connector
+from pet_store.pet_func.pet import Pet
 from lxml import objectify
-from api_functional.pet_func.pet_status import PetStatus
+from pet_store.pet_func.pet_status import PetStatus
 import logging as log
 
 
