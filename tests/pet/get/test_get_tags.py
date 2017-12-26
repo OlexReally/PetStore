@@ -1,5 +1,6 @@
 from pet_store.pet_func.pet import *
 from pet_store.pet_func.pet_functional import PetDriver
+from tests.conftest import HOST_URL
 
 
 def test_get_pet(pet_provider):

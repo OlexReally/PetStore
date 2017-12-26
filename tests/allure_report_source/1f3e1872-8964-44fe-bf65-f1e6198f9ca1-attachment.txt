@@ -1,0 +1,13 @@
+pet_functional.py           35 DEBUG    Create new link
+pet.py                      24 INFO     New pet instance created
+pet.py                      25 DEBUG    New pet instance created with id=0 and name=dog007
+pet_functional.py           44 DEBUG    Send POST Request with obj as XML
+connectionpool.py          208 DEBUG    Starting new HTTP connection (1): petstore.swagger.io
+connectionpool.py          396 DEBUG    http://petstore.swagger.io:80 "POST /v2/pet/ HTTP/1.1" 200 None
+pet.py                      24 INFO     New pet instance created
+pet.py                      25 DEBUG    New pet instance created with id=9123612807670167103 and name=dog007
+pet_functional.py           79 DEBUG    Send GET request for pet with: id= 9123612807670167103
+connectionpool.py          208 DEBUG    Starting new HTTP connection (1): petstore.swagger.io
+connectionpool.py          396 DEBUG    http://petstore.swagger.io:80 "GET /v2/pet/9123612807670167103 HTTP/1.1" 200 None
+pet.py                      24 INFO     New pet instance created
+pet.py                      25 DEBUG    New pet instance created with id=9123612807670167103 and name=dog007

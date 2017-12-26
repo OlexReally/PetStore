@@ -1,0 +1,82 @@
+{
+  "uid" : "cf435f4e5a6a135d",
+  "name" : "test_update_pet_negative[wrong_pet_provider0]",
+  "fullName" : "tests.pet.post.test_add_pet.test_update_pet_negative[wrong_pet_provider0]",
+  "historyId" : "435a71c286a6377c346beaaca582dc73",
+  "time" : {
+    "start" : 1514286972057,
+    "stop" : 1514286972305,
+    "duration" : 248
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7460ba6ccb8cd6e4",
+      "name" : "Captured log setup",
+      "source" : "7460ba6ccb8cd6e4.txt",
+      "type" : "text/plain",
+      "size" : 140
+    }, {
+      "uid" : "d259048a6196f691",
+      "name" : "Captured log call",
+      "source" : "d259048a6196f691.txt",
+      "type" : "text/plain",
+      "size" : 368
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "zamba"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "5172-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "tests.pet.post.test_add_pet"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.pet.post.test_add_pet"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_update_pet_negative[wrong_pet_provider0]"
+  }, {
+    "name" : "package",
+    "value" : "tests.pet.post.test_add_pet"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cf435f4e5a6a135d.json",
+  "parameterValues" : [ ]
+}

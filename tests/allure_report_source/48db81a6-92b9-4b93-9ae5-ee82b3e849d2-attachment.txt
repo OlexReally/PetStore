@@ -1,0 +1,2 @@
+conftest.py                 48 INFO     =====test_delete_existing_pet[pet_provider2]=====
+conftest.py                 49 INFO     None

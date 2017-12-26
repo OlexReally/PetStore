@@ -1,0 +1,2 @@
+conftest.py                 48 INFO     =====test_pet[pet_provider1]=====
+conftest.py                 49 INFO     None

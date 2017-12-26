@@ -10,6 +10,12 @@ Welcome to PetStore's documentation!
    :caption: Contents:
 
    pet
+   pet_functional
+   pet_container
+   pet_status
+   pars
+   connector
+   request
 
 Indices and tables
 ==================

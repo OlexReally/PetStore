@@ -84,7 +84,7 @@ class PetDriver:
         """
         Delete existing pet from server
 
-        :param id_: pets' ID
+        :param id_: pet's ID
         :return: answer of deleting pet
         """
         log.debug('Send DELETE request for pet with: id= %s', id_)
@@ -93,7 +93,8 @@ class PetDriver:
     def get_xml(self, id_):
         """
         Get XML of existing Pet from the server
-        :param id_:
+
+        :param id_: pet's ID
         :return: Pet's XML
         """
         log.debug('Try to get XML from server for pet with: id= %s', id_)

@@ -1,0 +1,82 @@
+{
+  "uid" : "d48151441cd7ea34",
+  "name" : "test_delete_existing_pet[pet_provider1]",
+  "fullName" : "tests.pet.delete.test_delete.test_delete_existing_pet[pet_provider1]",
+  "historyId" : "a1c778a1231cc38e7ccc5ca9ad3773c2",
+  "time" : {
+    "start" : 1514286966229,
+    "stop" : 1514286966718,
+    "duration" : 489
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "87cfc87d1dc3d4a2",
+      "name" : "Captured log setup",
+      "source" : "87cfc87d1dc3d4a2.txt",
+      "type" : "text/plain",
+      "size" : 134
+    }, {
+      "uid" : "4a45a6d07ba6ac0e",
+      "name" : "Captured log call",
+      "source" : "4a45a6d07ba6ac0e.txt",
+      "type" : "text/plain",
+      "size" : 818
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "zamba"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "5172-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "tests.pet.delete.test_delete"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.pet.delete.test_delete"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_delete_existing_pet[pet_provider1]"
+  }, {
+    "name" : "package",
+    "value" : "tests.pet.delete.test_delete"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d48151441cd7ea34.json",
+  "parameterValues" : [ ]
+}

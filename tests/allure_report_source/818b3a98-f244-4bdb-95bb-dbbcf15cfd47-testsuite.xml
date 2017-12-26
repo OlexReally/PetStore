@@ -1,0 +1,51 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1514286969476" stop="1514286970993">
+  <name>tests.pet.get.test_get_tags</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1514286969476" status="passed" stop="1514286969985">
+      <name>test_get_pet[pet_provider0]</name>
+      <attachments>
+        <attachment source="2589c65e-9511-4095-891d-2edbaadac555-attachment.txt" title="Captured log setup" type="text/plain"/>
+        <attachment source="8af54ed3-d4fa-44df-a4b9-0de3dddfe217-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5172-MainThread"/>
+        <label name="host" value="zamba"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1514286969997" status="passed" stop="1514286970486">
+      <name>test_get_pet[pet_provider1]</name>
+      <attachments>
+        <attachment source="e95c457e-4560-4d3d-86f1-bcfdd7934731-attachment.txt" title="Captured log setup" type="text/plain"/>
+        <attachment source="1f3e1872-8964-44fe-bf65-f1e6198f9ca1-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5172-MainThread"/>
+        <label name="host" value="zamba"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1514286970497" status="passed" stop="1514286970993">
+      <name>test_get_pet[pet_provider2]</name>
+      <attachments>
+        <attachment source="41a42cea-f78e-4337-8b50-5c884ec9c7f5-attachment.txt" title="Captured log setup" type="text/plain"/>
+        <attachment source="bdc50fec-bef9-4810-a16e-e287fcfefd66-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5172-MainThread"/>
+        <label name="host" value="zamba"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

@@ -1,0 +1,343 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PET_FUNCTIONAL &mdash; PetStore 0.0.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/css/porsche.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="PetStore 0.0.5 documentation" href="index.html"/>
+        <link rel="next" title="&lt;no title&gt;" href="pet_container.html"/>
+        <link rel="prev" title="PET" href="pet.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> PetStore
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="pet.html">PET</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PET_FUNCTIONAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connector.html">PET</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PetStore</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>PET_FUNCTIONAL</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pet_functional.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pet_store.pet_func.pet_functional">
+<span id="pet-functional"></span><h1>PET_FUNCTIONAL<a class="headerlink" href="#module-pet_store.pet_func.pet_functional" title="Permalink to this headline">¶</a></h1>
+<p>Contains functionality of Pet’s</p>
+<dl class="class">
+<dt id="pet_store.pet_func.pet_functional.PetDriver">
+<em class="property">class </em><code class="descclassname">pet_store.pet_func.pet_functional.</code><code class="descname">PetDriver</code><span class="sig-paren">(</span><em>url</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pet_store/pet_func/pet_functional.html#PetDriver"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pet_store.pet_func.pet_functional.PetDriver" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains each each action, which we can do with Pet</p>
+<dl class="docutils">
+<dt>Constants:</dt>
+<dd>__URL: end of the original link
+__HEADERS_SINGLE: single header for simple request
+__HEADERS_UPDATE: headers for update pet by post request
+__HEADERS_DOUBLE: header for creating pet by post request</dd>
+</dl>
+<dl class="method">
+<dt id="pet_store.pet_func.pet_functional.PetDriver.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>url</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pet_store/pet_func/pet_functional.html#PetDriver.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pet_store.pet_func.pet_functional.PetDriver.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create url for requests</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>url</strong> – original host URL</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pet_store.pet_func.pet_functional.PetDriver.create_pet">
+<code class="descname">create_pet</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pet_store/pet_func/pet_functional.html#PetDriver.create_pet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pet_store.pet_func.pet_functional.PetDriver.create_pet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create new pet on the server</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>obj</strong> – “objectify” of pet</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return Pet:</th><td class="field-body">new “objectify” from created pet on the server</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pet_store.pet_func.pet_functional.PetDriver.delete_pet">
+<code class="descname">delete_pet</code><span class="sig-paren">(</span><em>id_</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pet_store/pet_func/pet_functional.html#PetDriver.delete_pet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pet_store.pet_func.pet_functional.PetDriver.delete_pet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete existing pet from server</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> – pet’s ID</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">answer of deleting pet</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pet_store.pet_func.pet_functional.PetDriver.get_pet">
+<code class="descname">get_pet</code><span class="sig-paren">(</span><em>id_</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pet_store/pet_func/pet_functional.html#PetDriver.get_pet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pet_store.pet_func.pet_functional.PetDriver.get_pet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get existing pet from Server</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> – pet’s ID</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return Pet:</th><td class="field-body">return Pet</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pet_store.pet_func.pet_functional.PetDriver.get_xml">
+<code class="descname">get_xml</code><span class="sig-paren">(</span><em>id_</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pet_store/pet_func/pet_functional.html#PetDriver.get_xml"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pet_store.pet_func.pet_functional.PetDriver.get_xml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get XML of existing Pet from the server</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> – pet’s ID</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Pet’s XML</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pet_store.pet_func.pet_functional.PetDriver.update">
+<code class="descname">update</code><span class="sig-paren">(</span><em>id_</em>, <em>name=None</em>, <em>status=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pet_store/pet_func/pet_functional.html#PetDriver.update"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pet_store.pet_func.pet_functional.PetDriver.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update existing pet on the server</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>id</strong> – pet’s ID</li>
+<li><strong>name</strong> (<code class="xref py py-data docutils literal"><span class="pre">Optional</span></code>[<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">str</span></code></a>]) – new pet name</li>
+<li><strong>status</strong> (<code class="xref py py-data docutils literal"><span class="pre">Optional</span></code>[<a class="reference internal" href="pet_status.html#pet_store.pet_func.pet_status.PetStatus" title="pet_store.pet_func.pet_status.PetStatus"><code class="xref py py-class docutils literal"><span class="pre">PetStatus</span></code></a>]) – new status for pet from pet_status enum</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pet_container.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pet.html" class="btn btn-neutral" title="PET" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, 312room.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.5',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

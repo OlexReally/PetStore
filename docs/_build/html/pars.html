@@ -1,0 +1,291 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PARS &mdash; PetStore 0.0.5 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/css/porsche.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="PetStore 0.0.5 documentation" href="index.html"/>
+        <link rel="next" title="CONNECTOR" href="connector.html"/>
+        <link rel="prev" title="PET_STATUS" href="pet_status.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> PetStore
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="pet.html">PET</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pet_functional.html">PET_FUNCTIONAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pet_container.html">PET_CONTAINER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pet_status.html">PET_STATUS</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PARS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connector.html">CONNECTOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="request.html">REQUEST</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PetStore</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>PARS</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pars.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pet_store.pet_func.pars">
+<span id="pars"></span><h1>PARS<a class="headerlink" href="#module-pet_store.pet_func.pars" title="Permalink to this headline">¶</a></h1>
+<p>Contains Parser for XML document</p>
+<dl class="class">
+<dt id="pet_store.pet_func.pars.Parser">
+<em class="property">class </em><code class="descclassname">pet_store.pet_func.pars.</code><code class="descname">Parser</code><a class="reference internal" href="_modules/pet_store/pet_func/pars.html#Parser"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pet_store.pet_func.pars.Parser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class, which contains static method’s for parsing XML document</p>
+<dl class="staticmethod">
+<dt id="pet_store.pet_func.pars.Parser.get_id_from_xml">
+<em class="property">static </em><code class="descname">get_id_from_xml</code><span class="sig-paren">(</span><em>data_xml</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pet_store/pet_func/pars.html#Parser.get_id_from_xml"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pet_store.pet_func.pars.Parser.get_id_from_xml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Static method, which Pars XML and return Pet ID</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data_xml</strong> – XML document</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">ID</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pet_store.pet_func.pars.Parser.get_name_from_xml">
+<em class="property">static </em><code class="descname">get_name_from_xml</code><span class="sig-paren">(</span><em>data_xml</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pet_store/pet_func/pars.html#Parser.get_name_from_xml"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pet_store.pet_func.pars.Parser.get_name_from_xml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Static method, which Pars XML and return Pet Name</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data_xml</strong> – XML document</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Name</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="pet_store.pet_func.pars.Parser.get_status_xml">
+<em class="property">static </em><code class="descname">get_status_xml</code><span class="sig-paren">(</span><em>data_xml</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pet_store/pet_func/pars.html#Parser.get_status_xml"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pet_store.pet_func.pars.Parser.get_status_xml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Static method, which Pars XML and return Pet status</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data_xml</strong> – XML document</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Status</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="connector.html" class="btn btn-neutral float-right" title="CONNECTOR" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pet_status.html" class="btn btn-neutral" title="PET_STATUS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, 312room.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.5',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,5 +1,5 @@
 """
-    Contains class Pet
+Contains class Pet
 """
 import logging as log
 from pet_store.pet_func.pet_status import PetStatus
@@ -10,9 +10,9 @@ class Pet:
     Contains pet instance.
 
     Attributes:
-        __pet_id        Pet ID, number
-        __pet_name      Name of pet
-        __pet_status    Pet status (available,  pending, sold)
+        __pet_id:        Pet ID, number
+        __pet_name:      Name of pet
+        __pet_status:    Pet status (available,  pending, sold)
     """
     def __init__(self, pet_object):
         """

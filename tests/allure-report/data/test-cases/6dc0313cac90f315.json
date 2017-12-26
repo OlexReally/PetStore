@@ -1,0 +1,82 @@
+{
+  "uid" : "6dc0313cac90f315",
+  "name" : "test_add_pet_negative[wrong_pet_provider0]",
+  "fullName" : "tests.pet.post.test_add_pet.test_add_pet_negative[wrong_pet_provider0]",
+  "historyId" : "f160d2fbc000ef47fd0f6c344bd94f03",
+  "time" : {
+    "start" : 1514286971795,
+    "stop" : 1514286972045,
+    "duration" : 250
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f8245ac2df880af9",
+      "name" : "Captured log setup",
+      "source" : "f8245ac2df880af9.txt",
+      "type" : "text/plain",
+      "size" : 137
+    }, {
+      "uid" : "ad33dd8920b2045c",
+      "name" : "Captured log call",
+      "source" : "ad33dd8920b2045c.txt",
+      "type" : "text/plain",
+      "size" : 327
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "zamba"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "5172-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "tests.pet.post.test_add_pet"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.pet.post.test_add_pet"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_add_pet_negative[wrong_pet_provider0]"
+  }, {
+    "name" : "package",
+    "value" : "tests.pet.post.test_add_pet"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6dc0313cac90f315.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,96 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1514286965718" stop="1514286969465">
+  <name>tests.pet.delete.test_delete</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1514286965718" status="passed" stop="1514286966218">
+      <name>test_delete_existing_pet[pet_provider0]</name>
+      <attachments>
+        <attachment source="1c43f168-aa9c-4a9c-991f-f1802fe774c4-attachment.txt" title="Captured log setup" type="text/plain"/>
+        <attachment source="8489d277-0e39-4879-bbd1-f60f0c91cd1e-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5172-MainThread"/>
+        <label name="host" value="zamba"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1514286966229" status="passed" stop="1514286966718">
+      <name>test_delete_existing_pet[pet_provider1]</name>
+      <attachments>
+        <attachment source="6476c85a-7785-4b2b-a55f-ed126aa0ac43-attachment.txt" title="Captured log setup" type="text/plain"/>
+        <attachment source="22600ceb-a56e-4b8f-a7dd-37ecb0c0b240-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5172-MainThread"/>
+        <label name="host" value="zamba"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1514286966729" status="passed" stop="1514286967218">
+      <name>test_delete_existing_pet[pet_provider2]</name>
+      <attachments>
+        <attachment source="48db81a6-92b9-4b93-9ae5-ee82b3e849d2-attachment.txt" title="Captured log setup" type="text/plain"/>
+        <attachment source="ed905d79-270d-46e0-b0af-531838501fb7-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5172-MainThread"/>
+        <label name="host" value="zamba"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1514286967229" status="passed" stop="1514286967978">
+      <name>test_delete_not_existing_pet[pet_provider0]</name>
+      <attachments>
+        <attachment source="1b6026a7-25ca-40ae-97dd-3181dca8e4a3-attachment.txt" title="Captured log setup" type="text/plain"/>
+        <attachment source="120c4b7a-fbf3-43e3-a4f8-76adb8641fa0-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5172-MainThread"/>
+        <label name="host" value="zamba"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1514286967989" status="passed" stop="1514286968723">
+      <name>test_delete_not_existing_pet[pet_provider1]</name>
+      <attachments>
+        <attachment source="8a3a2e80-d422-4ccc-a7d8-501a6a67662e-attachment.txt" title="Captured log setup" type="text/plain"/>
+        <attachment source="583fd3ae-e930-4891-b8a1-f2620dfdb352-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5172-MainThread"/>
+        <label name="host" value="zamba"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1514286968735" status="passed" stop="1514286969465">
+      <name>test_delete_not_existing_pet[pet_provider2]</name>
+      <attachments>
+        <attachment source="f2d77e15-7729-4052-841b-4986db4ed31e-attachment.txt" title="Captured log setup" type="text/plain"/>
+        <attachment source="0bf5c1e5-aa16-4c13-a0ce-e0cb5cf96c69-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5172-MainThread"/>
+        <label name="host" value="zamba"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

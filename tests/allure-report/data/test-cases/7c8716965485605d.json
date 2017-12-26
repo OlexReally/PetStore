@@ -1,0 +1,82 @@
+{
+  "uid" : "7c8716965485605d",
+  "name" : "test_delete_not_existing_pet[pet_provider0]",
+  "fullName" : "tests.pet.delete.test_delete.test_delete_not_existing_pet[pet_provider0]",
+  "historyId" : "7c999563c6d06d54ae022f3a4ae8cefa",
+  "time" : {
+    "start" : 1514286967229,
+    "stop" : 1514286967978,
+    "duration" : 749
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "48920b774443cfc4",
+      "name" : "Captured log setup",
+      "source" : "48920b774443cfc4.txt",
+      "type" : "text/plain",
+      "size" : 138
+    }, {
+      "uid" : "d614837fe766b977",
+      "name" : "Captured log call",
+      "source" : "d614837fe766b977.txt",
+      "type" : "text/plain",
+      "size" : 1135
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "zamba"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "5172-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "tests.pet.delete.test_delete"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.pet.delete.test_delete"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_delete_not_existing_pet[pet_provider0]"
+  }, {
+    "name" : "package",
+    "value" : "tests.pet.delete.test_delete"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7c8716965485605d.json",
+  "parameterValues" : [ ]
+}
