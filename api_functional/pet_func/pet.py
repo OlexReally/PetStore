@@ -1,18 +1,18 @@
 """
-    Contains pet instance with attributes
+    Contains class Pet
 """
-#from lxml import objectify
-#from api_functional.rest_request.connector import *
-#from data.pet import *
 import logging as log
 from api_functional.pet_func.pet_status import PetStatus
-# from api_functional.pet_func.pet_functional import PetDriver
-from tests.conftest import HOST_URL
 
 
 class Pet:
     """
-    Contains pet instance with attributes
+    Contains pet instance.
+
+    Attributes:
+        __pet_id        Pet ID, number
+        __pet_name      Name of pet
+        __pet_status    Pet status (available,  pending, sold)
     """
     def __init__(self, pet_object):
         """
@@ -25,11 +25,22 @@ class Pet:
         log.debug("New pet instance created with id=%s and name=%s", self.id, self.name)
 
     def __pet_init(self, pet_object):
+        """
+        Method for init pet's attributes
+
+        :param pet_object: objectify pet object, parsed from .xml file or server's response
+        """
         self.__pet_id = pet_object.id.text
         self.__pet_name = pet_object.name.text
         self.__pet_status = self.__pet_status_init(pet_object.status.text)
 
     def __pet_status_init(self, text):
+        """
+        Init pet status
+
+        :param text: pet status in text
+        :return: Pet status
+        """
         status = PetStatus
         if text == status.AVAILABLE.value:
             return status.AVAILABLE
@@ -40,10 +51,6 @@ class Pet:
 
     @property
     def id(self):
-        """
-        ID PROPERTY
-        :return: ID
-        """
         return self.__pet_id
 
     @property

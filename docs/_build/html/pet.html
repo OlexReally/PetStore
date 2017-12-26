@@ -152,11 +152,32 @@
             
   <div class="section" id="module-api_functional.pet_func.pet">
 <span id="pet"></span><h1>PET<a class="headerlink" href="#module-api_functional.pet_func.pet" title="Permalink to this headline">¶</a></h1>
-<p>Contains pet instance with attributes</p>
+<p>Contains class Pet</p>
 <dl class="class">
 <dt id="api_functional.pet_func.pet.Pet">
 <em class="property">class </em><code class="descclassname">api_functional.pet_func.pet.</code><code class="descname">Pet</code><span class="sig-paren">(</span><em>pet_object</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/api_functional/pet_func/pet.html#Pet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api_functional.pet_func.pet.Pet" title="Permalink to this definition">¶</a></dt>
-<dd><p>Contains pet instance with attributes</p>
+<dd><p>Contains pet instance.</p>
+<dl class="docutils">
+<dt>Attributes:</dt>
+<dd>__pet_id        Pet ID, number
+__pet_name      Name of pet
+__pet_status    Pet status (available,  pending, sold)</dd>
+</dl>
+<dl class="method">
+<dt id="api_functional.pet_func.pet.Pet._Pet__pet_init">
+<code class="descname">_Pet__pet_init</code><span class="sig-paren">(</span><em>pet_object</em><span class="sig-paren">)</span><a class="headerlink" href="#api_functional.pet_func.pet.Pet._Pet__pet_init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method for init pet’s attributes
+:param pet_object: objectify pet object, parsed from .xml file or server’s response</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="api_functional.pet_func.pet.Pet._Pet__pet_status_init">
+<code class="descname">_Pet__pet_status_init</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="headerlink" href="#api_functional.pet_func.pet.Pet._Pet__pet_status_init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Init pet status
+:param text: pet status in text
+:return: Pet status</p>
+</dd></dl>
+
 <dl class="method">
 <dt id="api_functional.pet_func.pet.Pet.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>pet_object</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/api_functional/pet_func/pet.html#Pet.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#api_functional.pet_func.pet.Pet.__init__" title="Permalink to this definition">¶</a></dt>
@@ -169,13 +190,6 @@
 </tr>
 </tbody>
 </table>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="api_functional.pet_func.pet.Pet.id">
-<code class="descname">id</code><a class="headerlink" href="#api_functional.pet_func.pet.Pet.id" title="Permalink to this definition">¶</a></dt>
-<dd><p>ID PROPERTY
-:return: ID</p>
 </dd></dl>
 
 </dd></dl>

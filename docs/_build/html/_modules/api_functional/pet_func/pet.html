@@ -152,20 +152,20 @@
             
   <h1>Source code for api_functional.pet_func.pet</h1><div class="highlight"><pre>
 <span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Contains pet instance with attributes</span>
+<span class="sd">    Contains class Pet</span>
 <span class="sd">&quot;&quot;&quot;</span>
-<span class="c1">#from lxml import objectify</span>
-<span class="c1">#from api_functional.rest_request.connector import *</span>
-<span class="c1">#from data.pet import *</span>
 <span class="kn">import</span> <span class="nn">logging</span> <span class="k">as</span> <span class="nn">log</span>
 <span class="kn">from</span> <span class="nn">api_functional.pet_func.pet_status</span> <span class="k">import</span> <span class="n">PetStatus</span>
-<span class="c1"># from api_functional.pet_func.pet_functional import PetDriver</span>
-<span class="kn">from</span> <span class="nn">tests.conftest</span> <span class="k">import</span> <span class="n">HOST_URL</span>
 
 
 <div class="viewcode-block" id="Pet"><a class="viewcode-back" href="../../../pet.html#api_functional.pet_func.pet.Pet">[docs]</a><span class="k">class</span> <span class="nc">Pet</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Contains pet instance with attributes</span>
+<span class="sd">    Contains pet instance.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        __pet_id        Pet ID, number</span>
+<span class="sd">        __pet_name      Name of pet</span>
+<span class="sd">        __pet_status    Pet status (available,  pending, sold)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 <div class="viewcode-block" id="Pet.__init__"><a class="viewcode-back" href="../../../pet.html#api_functional.pet_func.pet.Pet.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pet_object</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
@@ -178,11 +178,20 @@
         <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;New pet instance created with id=</span><span class="si">%s</span><span class="s2"> and name=</span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span></div>
 
     <span class="k">def</span> <span class="nf">__pet_init</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pet_object</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Method for init pet&#39;s attributes</span>
+<span class="sd">        :param pet_object: objectify pet object, parsed from .xml file or server&#39;s response</span>
+<span class="sd">        &quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">__pet_id</span> <span class="o">=</span> <span class="n">pet_object</span><span class="o">.</span><span class="n">id</span><span class="o">.</span><span class="n">text</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">__pet_name</span> <span class="o">=</span> <span class="n">pet_object</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">text</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">__pet_status</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__pet_status_init</span><span class="p">(</span><span class="n">pet_object</span><span class="o">.</span><span class="n">status</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">__pet_status_init</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Init pet status</span>
+<span class="sd">        :param text: pet status in text</span>
+<span class="sd">        :return: Pet status</span>
+<span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">status</span> <span class="o">=</span> <span class="n">PetStatus</span>
         <span class="k">if</span> <span class="n">text</span> <span class="o">==</span> <span class="n">status</span><span class="o">.</span><span class="n">AVAILABLE</span><span class="o">.</span><span class="n">value</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">status</span><span class="o">.</span><span class="n">AVAILABLE</span>
@@ -193,10 +202,6 @@
 
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        ID PROPERTY</span>
-<span class="sd">        :return: ID</span>
-<span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__pet_id</span>
 
     <span class="nd">@property</span>
