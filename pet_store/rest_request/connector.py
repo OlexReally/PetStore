@@ -1,7 +1,7 @@
 """
 Wrapper for request module
 """
-from pet_store.rest_request.request import *
+from pet_store.rest_request.request import get, post, delete
 
 
 class Connector:

@@ -1,9 +1,7 @@
 import pytest
 from pet_store.pet_func.pet import Pet
-from tests.conftest import HOST_URL
 from pet_store.pet_func.pet_functional import PetDriver
-import logging
-import sys
+from tests.conftest import HOST_URL
 
 
 def test_add_pet(pet_provider):
@@ -24,7 +22,7 @@ def test_add_pet_negative(wrong_pet_provider):
     assert str(error.value) == 'Bad Request'
 
 
-def test_update_pet_negative(wrong_pet_provider):
+def test_update_pet_negative():
     pet_driver = PetDriver(HOST_URL)
 
     with pytest.raises(RuntimeError) as error:

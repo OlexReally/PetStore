@@ -1,7 +1,5 @@
-from pet_store.pet_func.pet import Pet
-from tests.conftest import HOST_URL
 import pytest
-from data.pet.pet_container import cat_pet
+from tests.conftest import HOST_URL
 from pet_store.pet_func.pet_functional import PetDriver
 
 

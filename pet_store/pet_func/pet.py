@@ -46,17 +46,32 @@ class Pet:
             return status.AVAILABLE
         elif text == status.PENDING.value:
             return status.PENDING
-        else:
-            return status.SOLD
+
+        return status.SOLD
 
     @property
     def id(self):
+        """
+        Get per ID
+
+        :return: pet id
+        """
         return self.__pet_id
 
     @property
     def name(self):
+        """
+        Get pet name
+
+        :return: pet name
+        """
         return self.__pet_name
 
     @property
     def status(self):
+        """
+        Get pet status
+
+        :return: pet status
+        """
         return self.__pet_status
